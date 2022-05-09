@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* Описание стилей CSS для виджета выбора даты jquery.ui.datepicker.js, системы статистики proto.Statistics. Boris Panchenko, 2011. */
+
+#datePicker	{ display: none; position: absolute; top: 55px; left: 10px; z-index: 100; }
+
+.ui-datepicker	{ background-color: #F3F3F3; border-top: 1px solid #F9F9F9; border-right: 1px solid #AFAFAF; border-bottom: 1px solid #AFAFAF; border-left: 1px solid #F9F9F9; -moz-box-shadow: 1px 1px 4px #B3B3B3; -webkit-box-shadow: 1px 1px 4px #B3B3B3; box-shadow: 1px 1px 4px #B3B3B3; opacity: .9; }
+
+.ui-datepicker-header	{  }
+.ui-datepicker-header .ui-datepicker-prev	{ display: block; width: 11px; height: 11px; background: url(hand_left.gif) no-repeat center; cursor: pointer; float: left; margin: 5px 0px 0px 2px; }
+.ui-datepicker-header .ui-datepicker-prev .ui-icon	{ display: none; }
+.ui-datepicker-header .ui-datepicker-next	{ display: block; width: 11px; height: 11px; background: url(hand_right.gif) no-repeat center; cursor: pointer; float: right; margin: 5px 2px 0px 0px; }
+.ui-datepicker-header .ui-datepicker-next .ui-icon	{ display: none; }
+.ui-datepicker-header .ui-datepicker-title	{ text-align: center; }
+.ui-datepicker-header .ui-datepicker-title .ui-datepicker-month	{  }
+.ui-datepicker-header .ui-datepicker-title .ui-datepicker-year	{  }
+
+.ui-datepicker-calendar	{  }
+.ui-datepicker-calendar th	{ font-size: 11px; width: 20px; background-color: #E7E7E7; }
+.ui-datepicker-calendar td	{ text-align: center; color: #A9A9A9; }
+.ui-datepicker-calendar .ui-datepicker-week-end a	{ color: #C40304; }
+.ui-datepicker-calendar .ui-datepicker-other-month	{ color: #A9A9A9; }
+
+.ui-datepicker-buttonpane	{ text-align: right; width: inherit; }
+.ui-datepicker-buttonpane button	{ border: none; margin: 0px 2px 0px 0px; background-color: #DEDEDE; text-transform: lowercase; font-size: 11px; padding: 0px 0px 0px 0px; text-align: center; width: inherit; }
+.ui-datepicker-buttonpane button.ui-datepicker-current	{ font-weight: bold; }
+.ui-datepicker-buttonpane button.ui-datepicker-close	{  }
