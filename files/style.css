@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* Описание стилей CSS для системы статистики proto.Statistics. Boris Panchenko, 2011. */
+/* TAG's */
+a			{ text-decoration: underline; color: #1a5f89; }
+a:hover		{ text-decoration: none; }
+a.invert		{ text-decoration: none; }
+a.invert:hover	{ text-decoration: underline; }
+a.invert_face		{ background-color: #7695A5; color: White; text-decoration: none; }
+a.invert_face:hover	{ color: #EDF1F3; }
+body		{ background-color: #f3f3f3; margin: 0px; }
+body		{ font: normal 13px "Trebuchet MS"; color: #333333; }
+fieldset	{ border-color: #DEDEDE; }
+h1,h2,h3,h4,h5,h6				{ margin: 0px; padding: 0px; }
+h1			{ font-size: 1.8em; font-weight: normal; }
+h2			{ font-size: 1.5em; font-weight: normal; }
+h3			{ font-size: 1.5em; font-weight: normal; }
+h4			{ font-size: 1.3em; font-weight: normal; }
+h5			{ font-size: 15px; font-weight: normal; margin-bottom: 5px; }
+h6			{ font-size: 13px; font-weight: bold; }
+img			{ border: none; margin: 0px; }
+small		{ font-size: 11px; }
+small small	{ font-size: 9px; }
+table		{ border: none; border-collapse: collapse; }
+table td 	{ padding: 0px; vertical-align: top; }
+u			{ cursor: help; border-bottom: 1px; border-bottom-style: dotted; text-decoration: none; }
+ul			{ list-style: none; margin: 0px 0px 5px 0px; padding-left: 0em; }
+ul li		{ padding-left: 1em; background: url('li.gif') no-repeat 0.45em 0.45em; }
+
+/* ID */
+
+
+#container	{ margin: 0px 10px 50px 10px; }
+#head		{ width: 200%; height: 100px; margin-left: -100%; background-color: #CCCCCC; }
+
+
+#menu_top	{ border-top: 1px dotted #333333; border-bottom: 1px dotted #333333; padding: 1px 0px 1px 0px; line-height: 1.7em; }
+
+#system_message_box				{ position: absolute; left: 10px; top: 112px; }
+.pop_window #system_message_box	{ top: 65px; }
+
+
+#top_line .cell_with_logo			{ text-align: right; width: 100%; height: 25px; }
+#top_line .cell_with_logo a			{ display: inline-block; margin: 5px 10px 0px 0px; text-decoration: none; }
+#top_line .cell_with_logo a strong	{  }
+
+
+
+
+/* Classes */
+
+table.list_items	{ empty-cells: show; border-collapse:separate; border-spacing: 0px; }
+/*  */
+table.list_items td		{ width: auto; padding: 2px 5px 3px 5px; }
+table.list_items th		{ width: auto; padding: 2px 5px 3px 5px; background-color: #a9a9a9; color: White !important; }
+/* color theme */
+table.list_items tr.row_odd td		{ background-color: #F3F3F3; border-top: 1px solid #F9F9F9; border-bottom: 1px solid #AFAFAF; }
+table.list_items tr.row_odd .first	{ border-top: 1px solid #F9F9F9; border-bottom: 1px solid #AFAFAF; border-left: 1px solid #F9F9F9; }
+table.list_items tr.row_odd .last	{ background-color: #F3F3F3; border-top: 1px solid #F9F9F9; border-bottom: 1px solid #AFAFAF; border-right: 1px solid #AFAFAF; }
+table.list_items tr.row_odd .dark	{ background-color: #e6e6e6; }
+table.list_items tr.row_even td		{ background-color: #E7E7E7; border-top: 1px solid #f3f3f3; border-bottom: 1px solid #a9a9a9; }
+table.list_items tr.row_even .first	{ border-top: 1px solid #f3f3f3; border-bottom: 1px solid #a9a9a9; border-left: 1px solid #f3f3f3; }
+table.list_items tr.row_even .last	{ background-color: #E7E7E7; border-top: 1px solid #f3f3f3; border-bottom: 1px solid #a9a9a9; border-right: 1px solid #a9a9a9; }
+table.list_items tr.row_even .dark	{ background-color: #dedede; }
+
+
+.attention_message	{ background: url(iAttention.gif) no-repeat left bottom; padding: 0px 0px 0px 40px; font-size: 11px; color: #C00000; min-height: 32px; }
+.attention_message ul li	{ background: url('li_attention_message.gif') no-repeat 5px 7px; }
+
+.statistics_box	{ float: left; margin-right: 30px; }
+
+.rounded_box_gray	{ background: #e7e7e7 url(rounded_box_gray_lt.gif) no-repeat left top; }
+.rounded_box_gray .corner_rt	{ height: 5px; 
+				background: url(rounded_box_gray_rt.gif) no-repeat right top; }
+.rounded_box_gray .corner_lb	{ height: 5px; 
+				background: url(rounded_box_gray_lb.gif) no-repeat left top; }
+.rounded_box_gray .corner_rb	{ height: 5px; 
+				background: url(rounded_box_gray_rb.gif) no-repeat right top; }
+.rounded_box_gray .inside		{ padding: 5px 10px 5px 10px; }
+
+.sign_down	{ display: inline-block; padding-right: 16px; background: url(sign_down.gif) no-repeat right; }
+.sign_up	{ display: inline-block; padding-right: 16px; background: url(sign_up.gif) no-repeat right; }
+
+
+/* Color's */
+.color_gray			{ color: #8e8e8e !important; }
+.color_red			{ color: #C00000 !important; }
+.color_inherit		{ color: inherit !important; }
+
+
+/* FORM */
+button				{
+	background-color: #2A78A8;
+	border:  3px double White;
+	/*
+	border:  1px outset #2A78A8;
+	border-top: 1px solid #97bdd4;
+	border-right: 1px solid #184662;
+	border-bottom: 1px solid #184662;
+	border-left: 1px solid #97bdd4;
+	*/
+	color: White; font-size: 1em; line-height: 1.4em; margin: 10px 10px 0px 305px; cursor: pointer; }
+.pop_window button	{ margin: 10px 10px 0px 205px; }
+button.gray			{
+	background-color: #B7B7B7;
+	border-top: 1px solid #dcdcdc;
+	border-right: 1px solid #6a6a6a;
+	border-bottom: 1px solid #6a6a6a;
+	border-left: 1px solid #dcdcdc; }
+button.clean		{ margin: 0px; }
+form		{ margin: 0px 0px 0px 0px; }
+
+form label				{ float: left; width: 300px; text-align: right; margin: 2px 5px 0px 0px; }
+.pop_window form label	{ width: 200px; }
+
+form small input,textarea,select		{ font-size: 11px; }
+form input,textarea,select	{ float: left; width: 500px; margin: 0px 0px 6px 0px; font-size: 13px; }
+form textarea				{ height: 150px; overflow: auto; }
+
+
+form h5	{ background-color: #A4A4A4; color: White; margin: 0px 0px 8px 305px; padding: 2px 0px 3px 5px; }
+form .attention_message	{ margin: 0px 0px 8px 305px; }
+form div.input_set	{ float: left; }
+form div.mes_error_box	{ margin-left: 305px; padding: 0px 0px 10px 0px; color: #C00000; }
+
+form.edit	{  }
+form.edit button	{ float: left; margin: 5px 0px 0px 0px; }
+form.edit label		{ width: 100px; }
+
+form.login			{  }
+form.login button	{ float: left; margin: 0px 10px 0px 0px; }
+form.login input	{ width: 190px; }
+form.login label	{ width: 50px; }
+form.login button	{
+	border-top: 1px solid #97bdd4;
+	border-right: 1px solid #184662;
+	border-bottom: 1px solid #184662;
+	border-left: 1px solid #97bdd4; }
+
+form.site_map			{  }
+form.site_map button	{ float: left; margin: 0px 10px 0px 0px; }
+form.site_map input,select	{ width: 250px; }
+form.site_map label		{ width: 100px; text-align: right; }
+
+/* FORM clean style */
+form label.clean	{ float: left; width: auto; text-align: left; margin: 2px 5px 0px 0px; }
+form input.clean	{ width: auto; height: auto; border: none; background: transparent; }
+
+
+/* Other */
+#tooltip	{ background-color: White; padding: 5px 10px 6px 10px; position: absolute; z-index: 200; visibility: hidden; font: 11px Tahoma; color: #434343; }
