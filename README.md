@@ -1,1 +1,7 @@
-# Cookie Free Web Analyzer
+# Web Site Counter and Web Analyzer without third-party cookies
+
+Веб-проект сбора и анализа данных о посещениях веб-ресурса пользователями и интернет-ботами.
+
+Проект был разработан в нулевых до появления аналогичных анализаторов Google и Yandex, поэтому: архитектура монолита; сбор данных на сервере с PHP 4; визуализация SSR, а на клиенте Macromedia Flash и Action Script 2.
+
+Возврат проекта к жизни обусловлен причинами описанными в статье https://habr.com/ru/articles/773260/ .
